@@ -43,7 +43,7 @@ Consistencia y Reproducibilidad: El Dockerfile permite reconstruir la aplicació
 Portabilidad: El contenedor puede desplegarse en cualquier sistema que tenga Docker, sin necesidad de instalar Node.js localmente.
 
 ## Captura de Pantalla
-
+![Image](https://github.com/AIejoCastro/ArquitecturaSFV-P1/blob/main/image.png)
 
 ## Mejoras Futuras
 Incorporar un script de automatización (bash) que realice el build, run y verificación.
