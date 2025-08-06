@@ -39,7 +39,9 @@ No se realizó el scrip de automatización
 
 ## Principios DevOps Aplicados
 Contenerización: A través de Docker, se garantiza que la aplicación se ejecute de forma idéntica en cualquier entorno.
+
 Consistencia y Reproducibilidad: El Dockerfile permite reconstruir la aplicación en cualquier momento de forma confiable.
+
 Portabilidad: El contenedor puede desplegarse en cualquier sistema que tenga Docker, sin necesidad de instalar Node.js localmente.
 
 ## Captura de Pantalla
@@ -47,16 +49,23 @@ Portabilidad: El contenedor puede desplegarse en cualquier sistema que tenga Doc
 
 ## Mejoras Futuras
 Incorporar un script de automatización (bash) que realice el build, run y verificación.
+
 Integrar pruebas automáticas con un framework como Jest.
+
 Configurar CI/CD con GitHub Actions o similar para automatizar builds y pruebas.
 
 ## Instrucciones para Ejecutar
 Construcción de la imagen Docker:
+```
 docker build -t miapp-nodejs .
+```
 
 Ejecución del contenedor:
+```
 docker run -d -p 8080:8080 --name mi-contenedor miapp-nodejs
+```
 
 Verificación de funcionamiento:
+```
 curl http://localhost:8080
-
+```
